@@ -65,6 +65,7 @@
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **Next.js 15.1.7** - React framework with App Router
 - **React 19.2.0** - UI library
 - **TypeScript** - Type safety
@@ -75,12 +76,14 @@
 - **Shiki** - Syntax highlighting
 
 ### Backend
+
 - **Next.js API Routes** - Serverless API endpoints
 - **Prisma** - Type-safe database ORM
 - **PostgreSQL** - Database
 - **NextAuth.js v5** - Authentication (Google OAuth)
 
 ### Infrastructure
+
 - **Docker** - Containerization for local development
 - **Husky** - Git hooks
 - **ESLint** - Code linting
@@ -92,7 +95,7 @@
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - PostgreSQL database (or Docker for local development)
 - Google OAuth credentials (for authentication)
 
@@ -125,11 +128,13 @@ AUTH_GOOGLE_SECRET=your_google_client_secret
 #### Generate AUTH_SECRET
 
 **Windows (PowerShell):**
+
 ```powershell
 [Convert]::ToBase64String((1..32 | ForEach-Object { Get-Random -Maximum 256 }))
 ```
 
 **macOS/Linux:**
+
 ```bash
 openssl rand -base64 32
 ```
@@ -209,11 +214,11 @@ export default function RootLayout({ children }) {
 Add the script tag before the closing `</body>` tag:
 
 ```html
-<script 
-  defer 
-  data-domain="your-domain.com" 
-  src="https://your-analytics-domain.com/tracking-script.js">
-</script>
+<script
+  defer
+  data-domain="your-domain.com"
+  src="https://your-analytics-domain.com/tracking-script.js"
+></script>
 ```
 
 ### Creating a Project
@@ -255,11 +260,13 @@ cp .env.example .env
 `AUTH_SECRET` is used by NextAuth for JWT signing and encryption.
 
 **Windows (PowerShell):**
+
 ```powershell
 [Convert]::ToBase64String((1..32 | ForEach-Object { Get-Random -Maximum 256 }))
 ```
 
 **macOS/Linux:**
+
 ```bash
 openssl rand -base64 32
 ```
@@ -281,11 +288,13 @@ openssl rand -base64 32
 #### Step 4: Configure DATABASE_URL
 
 **Docker (Local):**
+
 ```env
 DATABASE_URL=postgresql://postgres:postgres@localhost:5439/postgres
 ```
 
 **External Database:**
+
 ```env
 DATABASE_URL=postgresql://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME
 ```
@@ -354,6 +363,7 @@ When building the project, you may see a warning about Prisma and Edge Runtime:
 ```
 
 **This warning is safe to ignore.** It occurs because:
+
 - Middleware runs on Edge Runtime
 - PrismaAdapter is imported but only used during OAuth callbacks (Node.js runtime)
 - We use JWT strategy, so Prisma isn't executed in middleware
@@ -384,7 +394,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
 
-For commercial usage without AGPL-3.0 obligations, a commercial license is available. Contact [mihirraj444@gmail.com](mailto:mihirraj444@gmail.com) for pricing and terms.
+For commercial usage without AGPL-3.0 obligations, a commercial license is available. Contact [shiruvati07@gmail.com](mailto:shiruvati07@gmail.com) for pricing and terms.
 
 See [LICENSE](LICENSE) file for details.
 
@@ -402,7 +412,7 @@ See [LICENSE](LICENSE) file for details.
 ## 📞 Support
 
 - **Issues**: [GitHub Issues](https://github.com/yourusername/analytics/issues)
-- **Email**: mihirraj444@gmail.com
+- **Email**: shiruvati07@gmail.com
 
 ---
 
