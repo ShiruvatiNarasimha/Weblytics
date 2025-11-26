@@ -19,7 +19,7 @@ export const Navbar = () => {
           <SheetTrigger asChild>
             <Button
               size="icon"
-              className="md:hidden bg-[#C05D5D] hover:bg-[#c05d5dcb] text-gray-300"
+              className="md:hidden bg-black hover:bg-black/80 text-gray-300"
             >
               <Menu size={24} />
               <span className="sr-only">Toggle menu</span>

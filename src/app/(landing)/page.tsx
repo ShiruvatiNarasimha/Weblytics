@@ -1,34 +1,28 @@
 import React from "react";
 import Hero from "./_components/hero";
-import Features from "./_components/features";
-import Stats from "./_components/stats";
+import Perks from "./_components/features";
 import FAQ from "./_components/faq";
 import CTA from "./_components/cta";
 
 const HomePage = () => {
   return (
     <div className="relative flex flex-col w-full overflow-x-hidden">
-      {/* Hero Section */}
-      <section id="home" className="w-full">
+      <div
+        className="top-0 left-0 z-[10] absolute w-full h-[200px] rotate-[180deg]"
+        style={{
+          maskImage: "linear-gradient(transparent, black 85%)",
+          backgroundColor: "#00000065",
+        }}
+      />
+      <section className="w-full">
         <Hero />
       </section>
-
-      {/* Stats Section */}
-      <section id="stats" className="w-full">
-        <Stats />
+      <section className="w-full">
+        <Perks />
       </section>
-
-      {/* Features Section */}
-      <section id="features" className="w-full">
-        <Features />
-      </section>
-
-      {/* FAQ Section */}
-      <section id="faq" className="w-full">
+      <section className="w-full">
         <FAQ />
       </section>
-
-      {/* CTA Section */}
       <section className="w-full">
         <CTA />
       </section>
