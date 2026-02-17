@@ -91,7 +91,6 @@
 
 ---
 
-## 🚀 Installation
 
 ### Prerequisites
 
