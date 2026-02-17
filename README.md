@@ -114,7 +114,6 @@ npm install
 pnpm install
 ```
 
-### Step 3: Environment Setup
 
 Create a `.env` file in the root directory:
 
