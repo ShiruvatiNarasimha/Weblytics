@@ -96,7 +96,6 @@
 
 - Node.js 18+
 - PostgreSQL database (or Docker for local development)
-- Google OAuth credentials (for authentication)
 
 ### Step 1: Clone the Repository
 
